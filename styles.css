@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", "oswald";
+}
+
+.navbar {
+    font-family: 'oswald';
+    background-color: crimson;
+    padding: 15px;
+}
+
+.contentBox {
+    width: 300px;
+    padding: 50px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    margin: 30px 10px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contentBox h2 {
+    color: crimson;
+    font-family: oswald;
+}
+
+.contentBox p {
+    font-family: 'Franklin Gothic Medium'
+}
+
+.deleteBox {
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    margin-top: 20px;
+    background-color: crimson;
+    border: none;
+}
+
+#openPopup {
+    background-color: crimson;
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    border: none;
+    font-size: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.popup-overlay {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+
+#addContext {
+    background-color: crimson;
+    color: black;
+    width: 500px;
+    height: 260px;
+    border-radius: 10px;
+    border: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+
+#addContext h2 {
+    text-align: center;
+}
+
+#addContext input {
+    background: transparent;
+    border: none;
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+
+#addContext textarea {
+    background: transparent;
+    width: 86%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 2px;
+    resize: none;
+    padding-left: 20px;
+}
+
+
+
+#addContext input::placeholder {
+    color: black;
+}
+
+#addContext textarea::placeholder {
+    color: black;
+}
+
+#addContext button {
+    background-color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    margin: 5px;
+    border: none;
+}
+
+#addContext input:focus,
+textarea:focus {
+    outline: none;
+}
